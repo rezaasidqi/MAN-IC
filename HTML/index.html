@@ -1,24 +1,300 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Reza</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kemarau di Indonesia - Informasi Lengkap</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #f0e2b6, #f9f4d7);
+      color: #3a3a3a;
+      line-height: 1.6;
+      padding-top: 110px; /* header 70 + nav 40 */
+    }
+    header {
+      background: #d9b44a;;
+      color: #fff;
+      padding: 2rem 1rem;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    header h1 {
+      margin: 0;
+      font-weight: 600;
+      font-size: 1.8rem;
+      letter-spacing: 1px;
+    }
+    nav {
+      position: fixed;
+      top: 70px;
+      left: 0;
+      width: 100%;
+      background: #f2c14e;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      z-index: 999;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      padding: 5px 0;
+      flex-wrap: wrap;
+    }
+    nav a {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: #3a3a3a;
+      text-decoration: none;
+      background: #fff;
+      padding: 7px 15px;
+      border-radius: 22px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: background-color 0.3s ease, color 0.3s ease;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      user-select: none;
+    }
+    nav a:hover,
+    nav a:focus {
+      background: #b5838d;
+      color: #fff;
+      outline: none;
+      box-shadow: 0 4px 10px rgba(181,131,141,0.8);
+    }
+    main {
+      max-width: 900px;
+      margin: 0 auto 4rem;
+      padding: 0 1rem;
+    }
+    section {
+      background: #fff;
+      margin-bottom: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      padding: 1.5rem 2rem;
+      transition: box-shadow 0.3s ease;
+    }
+    section:hover {
+      box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    }
+    h2 {
+      color: #b5838d;
+      border-bottom: 3px solid #b5838d;
+      padding-bottom: 0.3rem;
+      margin-bottom: 1rem;
+      font-weight: 600;
+      font-size: 1.8rem;
+    }
+    p {
+      margin-bottom: 1rem;
+      font-size: 1.1rem;
+    }
+    ul {
+      margin-left: 1.3rem;
+      margin-bottom: 1rem;
+    }
+    li {
+      margin-bottom: 0.5rem;
+      font-size: 1.05rem;
+    }
+    img.map {
+      display: block;
+      max-width: 100%;
+      margin: 1rem auto;
+      border-radius: 10px;
+      border: 2px solid #b5838d;
+      box-shadow: 0 4px 15px rgba(181,131,141,0.4);
+    }
+    .sub-section {
+      margin-top: 1rem;
+    }
+    .sub-section h3 {
+      color: #f28482;
+      font-weight: 600;
+      font-size: 1.3rem;
+      margin-bottom: 0.7rem;
+      margin-top: 0.8rem;
+    }
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      background: #d9b44a;
+      color: #fff;
+      font-size: 0.9rem;
+      letter-spacing: 0.8px;
+      margin-top: 2rem;
+      box-shadow: 0 -4px 10px rgba(0,0,0,0.1);
+    }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.5rem;
+      }
+      main {
+        padding: 0 1rem 3rem;
+      }
+      section {
+        padding: 1.2rem 1.5rem;
+      }
+      h2 {
+        font-size: 1.5rem;
+      }
+      nav a {
+        padding: 6px 10px;
+        font-size: 0.85rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+    }
+  </style>
 </head>
 <body>
-    <h1> HTML : INTRODUCTION</h1>
-    <p>HALO SAYA SEDANG BELAJAR HTML</p>
-    <P>saya senang belajar html</P>
-    <br>
-    <h2>Text Formatting</h2>
-    <p><b>file pertama html</b> adalah <mark>adalah index.html</mark></p>
-    <br>
+<header>
+  <h1>Kemarau di Indonesia</h1>
+</header>
+<nav>
+  <a href="#home" tabindex="1">Home</a>
+  <a href="#pengertian" tabindex="2">Pengertian</a>
+  <a href="#penyebab" tabindex="3">Penyebab</a>
+  <a href="#dampak" tabindex="4">Dampak</a>
+  <a href="#waktu-kekeringan" tabindex="5">Waktu Kekeringan</a>
+  <a href="#daerah-terburuk" tabindex="6">Daerah Terburuk</a>
+  <a href="#apa-yang-harus-dilakukan" tabindex="7">Apa yang Harus Dilakukan</a>
+  <a href="#biodata-kelompok" tabindex="8">Biodata Kelompok</a>
+</nav>
+<main>
+  <section id="pengertian">
+    <h2 align="center">Pengertian</h2>
+    <p>Kemarau adalah musim kering yang terjadi di suatu wilayah, ditandai dengan curah hujan yang sangat rendah atau hampir tidak ada sama sekali selama periode waktu tertentu. Masa ini biasanya berlangsung beberapa bulan dan mempengaruhi kondisi lingkungan serta aktivitas manusia.</p>
+  </section>
 
-    <h2>Rumus Matematika</h2>
-        <p>X <sup>2</sup>+Y <sup>2</sup></p>
-        <br>
-    <h2>Rumus Kimia</h2>
-    <p>Air = H<sub>2</sub>O</p>
-    <p>Asam Sulfat = H<sub>2</sub>SO<sub>4</sub></p>
+
+  <section id="home">
+    <h2>Seberapa Bahaya Kemarau di Indonesia?</h2>
+    <p>Kemarau di Indonesia bukan sekadar musim kering biasa. Musim kemarau yang berkepanjangan telah menjadi ancaman serius bagi kehidupan masyarakat dan lingkungan. Beban ekonomi yang timbul dari kemarau dapat menyebabkan kesulitan bagi banyak keluarga petani dan masyarakat yang menggantungkan hidup pada sumber daya alam.</p>
+    <p>Penting bagi kita semua untuk memahami bahaya kemarau dan menyiapkan langkah-langkah adaptasi dan mitigasi. Dengan cara ini, kita dapat meminimalisir kerusakan dan menjaga lingkungan serta kesejahteraan masyarakat Indonesia.</p>
+  </section>
+ 
+  <section id="penyebab">
+    <h2 align="center">Penyebab Terjadinya Musim Kemarau</h2>
+    <p>Musim kemarau terjadi akibat berbagai faktor dari aspek alam dan manusia, antara lain:</p>
+    <ul>
+      <li><strong>Faktor Alam dan Iklim:</strong> Angin musim timuran yang membawa udara kering dari daratan Asia menyebabkan berkurangnya curah hujan di Indonesia pada periode kemarau.</li>
+      <li><strong>Fenomena Alam Global:</strong> Peristiwa El Niño yang menyebabkan suhu permukaan laut di Samudra Pasifik bagian tengah dan timur meningkat, akibatnya pola hujan di Indonesia terganggu dan menyebabkan kemarau lebih panjang.</li>
+      <li><strong>Penggundulan Hutan:</strong> Aktivitas deforestasi yang masif mengurangi kemampuan hutan untuk menyimpan air dan mengatur kelembapan udara, memperparah kondisi kering saat kemarau.</li>
+      <li><strong>Perubahan Iklim:</strong> Dampak pemanasan global menyebabkan perubahan pola cuaca yang ekstrem, termasuk musim kemarau yang lebih intens dan lama.</li>
+      <li><strong>Pengelolaan Air yang Kurang Baik:</strong> Kurangnya sistem penyimpanan dan konservasi air yang efisien membuat kondisi kekeringan saat kemarau lebih parah.</li>
+    </ul>
+  </section>
+
+
+  <section id="dampak">
+    <h2 align="center">Dampak</h2>
+    <p>Kemarau yang berkepanjangan dapat menimbulkan berbagai dampak negatif, seperti:</p>
+    <ul>
+      <li>Kekeringan yang menyebabkan tanaman gagal panen.</li>
+      <li>Krisis air bersih bagi masyarakat dan hewan.</li>
+      <li>Meningkatnya risiko kebakaran hutan dan lahan.</li>
+      <li>Gangguan terhadap kesehatan karena debu dan kelembapan rendah.</li>
+      <li>Dampak ekonomi bagi petani dan masyarakat terdampak.</li>
+    </ul>
+  </section>
+
+
+  <section id="waktu-kekeringan">
+    <h2 align="center">Waktu Terjadinya Kekeringan</h2>
+    <p>Kemarau biasanya terjadi di Indonesia pada bulan Mei hingga September, tergantung wilayahnya. Pada periode ini, angin musim timuran membawa udara kering dari Asia daratan, sehingga curah hujan menurun drastis dan suhu cenderung meningkat.</p>
+  </section>
+
+
+  <section id="daerah-terburuk">
+    <h2 align="center">Daerah dengan Efek Terburuk Kemarau</h2>
+    <p>Beberapa daerah di Indonesia yang biasanya mengalami efek terburuk akibat musim kemarau panjang meliputi:</p>
+    <ul>
+      <li><strong>Nusa Tenggara Timur (NTT)
+        <img src="../HTML/assets/ntt.png" alt="Peta Lokasi Nusa Tenggara Timur" class="map" />
+      <li><strong>Nusa Tenggara Barat (NTB)
+        <img src="../HTML/assets/ntb.jpg" alt="Peta Lokasi Nusa Tenggara Barat" class="map" />
+      <li><strong>Jawa Timur
+        <img src="../HTML/assets/jatim.jpg" alt="Peta Lokasi Jawa Timur" class="map" height= "auto" width="400px" />
+      <li><strong>Jawa Tengah</strong></li>
+        <img src="../HTML/assets/jateng.jpg" alt="Peta Lokasi Jawa Tengah" class="map" />
+      <li><strong>Sumatra Selatan
+        <img src="../HTML/assets/sumsel.jpg" alt="Peta Lokasi Sumatera Selatan" class="map" height= "auto" width="400px"/>
+      <li><strong>Bengkulu</strong></li>
+        <img src="../HTML/assets/bengkulu.jpg" alt="Peta Lokasi Bengkulu" class="map" height= "auto" width="400px"/>
+    </ul>
+  </section>
+
+
+  <section id="apa-yang-harus-dilakukan">
+    <h2 align="center">Apa yang Harus Dilakukan</h2>
+   
+    <div class="sub-section" id="sebelum-kekeringan">
+      <h3>Sebelum Kekeringan</h3>
+      <ul>
+        <li>Mengumpulkan dan menyimpan air hujan dengan baik.</li>
+        <li>Menyiapkan lahan dengan metode irigasi yang efisien.</li>
+        <li>Meningkatkan kesadaran masyarakat akan pentingnya konservasi air.</li>
+        <li>Menanam tanaman tahan kekeringan.</li>
+      </ul>
+    </div>
+
+
+    <div class="sub-section" id="sedang-kekeringan">
+      <h3>Sedang Kekeringan</h3>
+      <ul>
+        <li>Mengurangi penggunaan air yang tidak penting dan hemat saat memakai air.</li>
+        <li>Mengelola sumber daya air secara bijaksana dan mendistribusikan bantuan air bersih.</li>
+        <li>Memantau kesehatan terutama bagi kelompok rentan (anak-anak, lansia).</li>
+        <li>Mewaspadai risiko kebakaran hutan dan mengambil tindakan pencegahan.</li>
+      </ul>
+    </div>
+
+
+    <div class="sub-section" id="setelah-kekeringan">
+      <h3>Setelah Kekeringan</h3>
+      <ul>
+        <li>Melakukan evaluasi kerusakan lingkungan dan pertanian.</li>
+        <li>Mengembalikan pasokan air dan memperbaiki sumber air yang rusak.</li>
+        <li>Melakukan penghijauan dan penanaman kembali tanaman yang layu.</li>
+        <li>Menyiapkan langkah antisipasi dan kesiapsiagaan untuk musim kemarau berikutnya.</li>
+      </ul>
+    </div>
+  </section>
+
+
+  <section id="biodata-kelompok">
+    <h2 align="center">Biodata Kelompok</h2>
+    <ul>
+      <li><strong>Anggota 1</strong></li>
+      <li><strong>Nama:Buwono Rifa'i</strong></li>
+        <img src="../HTML/assets/bono.jpg" alt="foto bono" height= "auto" width="100px"/>
+        <li><strong>Anggota 2</strong></li>
+        <li><strong>Nama:Reza Asidqi</strong></li>
+          <img src="../HTML/assets/reja.jpg" alt="foto bono" height= "auto" width="100px"/>  
+     
+    </ul>
+  </section>
+</main>
+<footer>PROJEK GEOGRAFI KELOMPOK BENCANA KEKERINGAN</footer>
 </body>
 </html>
+
+
+
